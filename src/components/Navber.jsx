@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navber = () => {
@@ -46,7 +46,7 @@ const Navber = () => {
             <NavLink to="/bookmarks"className={({isActive})=>isActive ? 'text-primary font-bold' : 'font-bold'}>Bookmarks</NavLink>
           </ul>
         </div>
-        <a className="btn btn-ghost  text-xl text-secondary">Byte<span className="text-primary">Blaze</span></a>
+        <Link to="/" className="btn btn-ghost  text-xl text-secondary">Byte<span className="text-primary">Blaze</span></Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal flex gap-3 px-1">
