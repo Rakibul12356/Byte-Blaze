@@ -1,5 +1,6 @@
 
 
+import Footer from '../components/Footer/Footer';
 import Navber from '../components/Navber';
 import { Outlet } from 'react-router-dom';
 
@@ -9,7 +10,9 @@ const Rout = () => {
            <div className='h-16'>
            <Navber></Navber>
            </div>
-           <Outlet></Outlet>
+           <div className='min-h-[calc(100vh-166px)]'><Outlet></Outlet></div>
+           <Footer></Footer>
+
         </div>
     );
 };
