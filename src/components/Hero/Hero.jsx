@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 const Hero = () => {
     return (
         <div>
-            <div className="hero bg-base-200 ">
+            <div className="hero mt-16 ">
                 <div className="hero-content text-center">
                     <div className="max-w-lg">
-                        <h1 className="text-4xl font-bold">Welcome to <span className="text-primary">ByteBlaze</span></h1>
+                        <h1 className="text-4xl font-bold">Welcome to <span   className="text-2xl font-bold bg-300% bg-gradient-to-r from-red-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient"
+                        >ByteBlaze</span></h1>
                         <p className="py-6">
                             A React.js web app that automates software development tasks like code review and deployment.
                         </p>
