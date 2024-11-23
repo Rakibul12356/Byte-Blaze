@@ -1,8 +1,9 @@
+import BlogsCard from "../components/BlogsCard/BlogsCard";
 
 const Blogs = () => {
     return (
         <div>
-            This is Blogs
+         <BlogsCard></BlogsCard>
         </div>
     );
 };

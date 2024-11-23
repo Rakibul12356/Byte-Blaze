@@ -1,3 +1,7 @@
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 /* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -6,8 +10,21 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    
-    extend: {},
+    extend: {
+      keyframes: {
+        animatedgradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+      },
+      backgroundSize: {
+        '300%': '300%',
+      },
+      animation: {
+        gradient: 'animatedgradient 6s ease infinite alternate',
+      },
+    },
   },
 
   plugins: [
@@ -16,4 +33,5 @@ export default {
   daisyui: {
     themes: ["light", "synthwave"],
   },
-}
+};
+
